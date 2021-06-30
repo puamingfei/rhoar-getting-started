@@ -1,8 +1,19 @@
 package com.example.service;
 
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
-@Repository
-public interface FruitRepository extends JpaRepository<Fruit, Long> {
+import java.util.List;
+
+@RestController
+@RequestMapping("/api/fruits")
+public class FruitController {
+
+    @Autowired FruitRepository repository; // Ignore this
+
+    // TODO GET mappings
+    // TODO POST mapping
+    // TODO PUT mapping
+    // TODO DELETE mapping
+
 }
